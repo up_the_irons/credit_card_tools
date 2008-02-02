@@ -1,0 +1,79 @@
+Credit Card Tools
+=================
+
+These are a set of ruby scripts to processing credit cards on the command
+line.
+
+Supported processors:
+
+  * PayPal
+
+Requirements
+------------
+
+  * RubyGems
+  * ActiveMerchant
+
+Setup
+-----
+
+Copy gateway.yml.example to gateway.yml and fill in the 3 fields in that file.
+
+Install ActiveMerchant::
+
+  gem install activemerchant
+
+If the *.rb files are not set executable, you should do::
+
+  chmod 755 *.rb
+
+Usage
+-----
+
+Commands:
+
+  * charge.rb
+  * refund.rb
+
+Run the commands without arguments to see the options
+
+Example charge::
+
+  ./charge.rb 100 4111111111111111 02/2012
+
+Example refund::
+
+  ./refund.rb 100 2TL24258DY409104G
+
+The second argument in the above example is Auth ID of the original 
+transaction.
+
+Author
+------
+
+Garry C. Dolley
+
+gdolley [at] NOSPAM- ucla.edu
+
+AIM: garry97531
+
+IRC: I am up_the_irons in #ram, #git and #caboose on Freenode.
+
+Copyright
+---------
+
+Copyright (c) 2008 Garry C. Dolley
+
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later 
+version.
+
+This is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this software; if not, write to the Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA  02110-1301, USA
