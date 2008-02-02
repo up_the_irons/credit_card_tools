@@ -25,7 +25,7 @@ Install ActiveMerchant::
 
 If the *.rb files are not set executable, you should do::
 
-  chmod 755 *.rb
+  chmod 755 charge.rb refund.rb
 
 Usage
 -----
