@@ -1,7 +1,7 @@
 Credit Card Tools
 =================
 
-These are a set of ruby scripts to processing credit cards on the command
+These are a set of ruby scripts for processing credit cards on the command
 line.
 
 Supported processors:
