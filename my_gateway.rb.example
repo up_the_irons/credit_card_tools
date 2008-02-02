@@ -1,9 +1,0 @@
-# Fill in the following three lines
-$API_LOGIN        = ''
-$API_PASSWORD     = ''
-$API_KEY_FILENAME = ''
-
-@gateway = ActiveMerchant::Billing::PaypalGateway.new(
-  :login    => $API_LOGIN,
-  :password => $API_PASSWORD,
-  :pem      => File.read(File.join($API_KEY_FILENAME)))
