@@ -45,7 +45,7 @@ Example refund::
 
   ./refund.rb 100 2TL24258DY409104G
 
-The second argument in the above example is Auth ID of the original 
+The second argument in the above example is the Auth ID of the original 
 transaction.
 
 Author
