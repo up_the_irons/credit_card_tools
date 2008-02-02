@@ -1,0 +1,4 @@
+# Fill these in
+api_login: 
+api_password: 
+api_key_filename: my_paypal.pem
