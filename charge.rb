@@ -4,7 +4,7 @@ require 'rubygems'
 require 'active_merchant'
 
 # Provides @gateway instance
-require 'my_gateway'
+require 'gateway'
 
 $AMOUNT     = ARGV[0]
 $CCNUM      = ARGV[1]

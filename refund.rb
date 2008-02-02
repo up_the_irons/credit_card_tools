@@ -4,7 +4,7 @@ require 'rubygems'
 require 'active_merchant'
 
 # Provides @gateway instance
-require 'my_gateway'
+require 'gateway'
 
 def usage
   puts "./refund.rb <amount> <auth_id>"
