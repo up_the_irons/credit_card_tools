@@ -36,6 +36,6 @@ creditcard = ActiveMerchant::Billing::CreditCard.new(
   :last_name  => $LAST_NAME
 )
 
-response = @gateway.purchase($AMOUNT, creditcard, :ip => '208.79.88.31')
+response = @gateway.purchase($AMOUNT, creditcard, :ip => '127.0.0.1')
 
 puts response.to_yaml
