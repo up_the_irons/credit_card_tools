@@ -13,6 +13,9 @@ end
 $AMOUNT  = ARGV[0]
 $AUTH_ID = ARGV[1]
 
+# Convert dollars to cents
+$AMOUNT = ($AMOUNT.to_f * 100).to_i unless $AMOUNT.nil?
+
 unless $AMOUNT && $AUTH_ID
   usage
   exit
