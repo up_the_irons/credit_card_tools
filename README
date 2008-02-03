@@ -23,7 +23,7 @@ Install ActiveMerchant::
 
   gem install activemerchant
 
-If the *.rb files are not set executable, you should do::
+If the following files are not set executable, you should do::
 
   chmod 755 charge.rb refund.rb
 
@@ -35,18 +35,31 @@ Commands:
   * charge.rb
   * refund.rb
 
-Run the commands without arguments to see the options
+Run the commands without arguments to see the options.
 
-Example charge::
+Example $1.00 charge::
 
-  ./charge.rb 100 4111111111111111 02/2012
+  ./charge.rb 1.00 4111111111111111 02/2012
 
-Example refund::
+Example $1.00 refund::
 
-  ./refund.rb 100 2TL24258DY409104G
+  ./refund.rb 1.00 2TL24258DY409104G
 
 The second argument in the above example is the Auth ID of the original 
 transaction.
+
+The output will be a nicely formatted response from PayPal.  The response is
+in YAML format, so you could do further processing with your own scripts 
+relatively easily.
+
+Other Processors
+----------------
+
+ActiveMerchant supports a large list of credit card processors / gateways.
+To use these tools with a gateway besides PayPal, modify gateway.rb to suit
+your needs.  It should be relatively straight forward.
+
+See: http://www.activemerchant.org
 
 Author
 ------
