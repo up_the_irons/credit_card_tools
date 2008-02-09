@@ -17,7 +17,11 @@ Requirements
 Setup
 -----
 
-Copy gateway.yml.example to gateway.yml and fill in the 3 fields in that file.
+Copy gateway.yml.example to gateway.yml and fill in the fields in that file.
+
+There is one block for the "live" environment, where real credit cards are
+charged, and one block for the "test" environment, which mocks everything
+through PayPal's Sandbox and no real money is exchanged.
 
 Install ActiveMerchant::
 
