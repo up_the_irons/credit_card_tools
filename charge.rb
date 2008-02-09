@@ -44,7 +44,7 @@ $CCEXP_MONTH, $CCEXP_YEAR = $CCEXP.split('/')
 
 cc_hash = { 
   :number     => $CCNUM,
-  :month      => $CCEXP_MONTH,
+  :month      => $CCEXP_MONTH.to_i,
   :year       => $CCEXP_YEAR,
   :first_name => $FIRST_NAME,
   :last_name  => $LAST_NAME 
