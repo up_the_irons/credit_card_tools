@@ -1,4 +1,14 @@
 # Fill these in
-api_login: 
-api_password: 
-api_key_filename: my_paypal.pem
+live:
+  api_login: 
+  api_password: 
+  api_key_filename: my_paypal.pem
+
+  # Change below to 'true' to go live, otherwise the 'test' credentials are
+  # used instead.
+  enabled: false
+
+test:
+  api_login: 
+  api_password: 
+  api_signature:
