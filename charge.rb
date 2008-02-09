@@ -5,9 +5,9 @@ $:.unshift File.join(File.dirname(__FILE__))
 $AMOUNT     = ARGV[0]
 $CCNUM      = ARGV[1]
 $CCEXP      = ARGV[2]
-$FIRST_NAME = ARGV[3]
-$LAST_NAME  = ARGV[4]
-$CVV2       = ARGV[5]
+$CVV2       = ARGV[3]
+$FIRST_NAME = ARGV[4]
+$LAST_NAME  = ARGV[5]
 
 # Optional billing address
 $BILLING_NAME    = ARGV[6]
