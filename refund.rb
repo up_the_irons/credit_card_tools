@@ -2,12 +2,6 @@
 
 $:.unshift File.join(File.dirname(__FILE__))
 
-require 'rubygems'
-require 'active_merchant'
-
-# Provides @gateway instance
-require 'gateway'
-
 def usage
   puts "./refund.rb <amount> <auth_id>"
 end
@@ -22,6 +16,12 @@ unless $AMOUNT && $AUTH_ID
   usage
   exit
 end
+
+require 'rubygems'
+require 'active_merchant'
+
+# Provides @gateway instance
+require 'gateway'
 
 response = @gateway.credit($AMOUNT.to_i, $AUTH_ID)
 
