@@ -2,12 +2,6 @@
 
 $:.unshift File.join(File.dirname(__FILE__))
 
-require 'rubygems'
-require 'active_merchant'
-
-# Provides @gateway instance
-require 'gateway'
-
 $AMOUNT     = ARGV[0]
 $CCNUM      = ARGV[1]
 $CCEXP      = ARGV[2]
@@ -27,6 +21,12 @@ unless $AMOUNT && $CCNUM && $CCEXP
   usage
   exit
 end
+
+require 'rubygems'
+require 'active_merchant'
+
+# Provides @gateway instance
+require 'gateway'
 
 $CCEXP_MONTH, $CCEXP_YEAR = $CCEXP.split('/')
 
