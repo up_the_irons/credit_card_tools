@@ -26,8 +26,9 @@ def usage
   puts "To enter an empty string for any optional argument, put \"\" (empty set of quotes)"
 end
 
-# Convert dollars to cents
-$AMOUNT = ($AMOUNT.to_f * 100).to_i unless $AMOUNT.nil?
+# Convert dollars to cents (the funny multiply and divide is to eliminate
+# potential rounding errors)
+$AMOUNT = ($AMOUNT.to_f * 10000 / 100).to_i unless $AMOUNT.nil?
 
 unless $AMOUNT && $CCNUM && $CCEXP
   usage
